@@ -1,0 +1,5 @@
+mkdir -p model
+wget "https://storage.googleapis.com/bert_models/2018_10_18/uncased_L-12_H-768_A-12.zip" -O model/uncased_L-12_H-768_A-12.zip
+unzip model/uncased_L-12_H-768_A-12.zip
+git clone https://github.com/manba036/bert.git /work/bert
+cp bert_tdms/run_classifier_sci.py /work/bert/
